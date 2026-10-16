@@ -1,0 +1,25 @@
+# Локальные окружения и секреты
+.venv/
+.venv-*/
+.env
+.env.*
+!.env.example
+
+# Кэши Python/Jupyter и редакторов
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Временные файлы; исходные журналы и результаты НЕ игнорируются
+*.tmp
+*.lock
+*.aux
+*.toc
+*.out
+*.synctex.gz
