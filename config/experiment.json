@@ -1,0 +1,74 @@
+{
+  "hypotheses": [
+    "H1",
+    "H6",
+    "H9"
+  ],
+  "custom_hypothesis_groups": {},
+  "temperature_main": 0,
+  "sc_repeats": 5,
+  "sc_temperature": 0.7,
+  "languages": [
+    "ru"
+  ],
+  "seed": 42,
+  "bootstrap_n": 1000,
+  "prompt_version": "v1",
+  "prompt_hash": "d946bcbce2dd",
+  "extra_runs": {
+    "_comment": "Дополнительные прогоны src.run_extra. types: какие типы задач брать (null = все, где есть нужный текст). cot.extra_models: модели, которые в режиме cot идут с обычным промптом base, потому что рассуждают сами (например qwen3-8b-think для H6); прогоняются, даже если enabled=false. vote_rule описывает правило большинства для H7 (см. src/run_extra.py::vote).",
+    "cot": {
+      "types": [
+        "A",
+        "B"
+      ],
+      "extra_models": [
+        "qwen3-8b-think"
+      ]
+    },
+    "selfconsistency": {
+      "types": [
+        "A",
+        "B",
+        "F"
+      ],
+      "vote_rule": "числа совпадают, если все в пределах tolerance задачи; отказ и «нельзя определить» — один ответ; неразобранные ответы не голосуют; при ничьей — ответ, встретившийся раньше"
+    },
+    "followup_doubt": {
+      "types": [
+        "A",
+        "B",
+        "F"
+      ]
+    },
+    "paraphrase": {
+      "types": null
+    },
+    "lang_en": {
+      "types": null
+    },
+    "verbal_formula": {
+      "types": null
+    }
+  },
+  "typeE": {
+    "_comment": "Тип E, используется src/typeE.py и src/run_classifier.py; seed — общий (поле seed). test_mode: enriched (n_test_failures отказов в тесте) или natural (естественная доля, ~7 из 200) — принято enriched (решение по умолчанию, прогоны 15.10.2026 выполнены с ним). shot_failures: сколько отказов в наборе few-shot данного размера; наборы вложенные (5 ⊂ 20). n_resamples: число случайных стратифицированных наборов для разброса LogReg/NB (без API). n_dev_rows: строки пула для отладки промпта (experiment=dev).",
+    "dataset": "AI4I 2020 (UCI id 601)",
+    "data_file": "data/ai4i2020.csv",
+    "split_file": "data/e_split.json",
+    "test_mode": "enriched",
+    "n_test": 200,
+    "n_test_failures": 40,
+    "shots": [
+      0,
+      5,
+      20
+    ],
+    "shot_failures": {
+      "5": 2,
+      "20": 5
+    },
+    "n_resamples": 20,
+    "n_dev_rows": 6
+  }
+}

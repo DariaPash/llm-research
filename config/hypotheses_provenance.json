@@ -1,0 +1,15 @@
+{
+  "source": "results/run_manifest.json → hypotheses; дата не является датой подготовки копии",
+  "ids": [
+    "H1",
+    "H6",
+    "H9"
+  ],
+  "commit": "67d7108136a3877df3c6c6b82326d129ef5556ae",
+  "commit_time": "2026-10-14T22:00:45+03:00",
+  "source_manifest_sha256": "2b6c0d1670a0e82f08592ec4083fa5ec75cdd456d3ef1b1c185526c86e3df000",
+  "original_hypotheses_sha256": "d320da2f018f9b6250e6b6202a3389cc4aedb104513423807b2c051474b5ec4c",
+  "submitted_hypotheses_sha256": "50085d16a98c99d7f978682e87576456d75c928ad5a864e5938517a3f5f140d9",
+  "editorial_change": "Удалены только инструкции заполнения и команды Git; поля гипотез, прогнозы и критерии совпадают дословно.",
+  "scientific_fields_sha256": "f3c6c3b11751a462a629414e7b9c4e09a2d377bdc7d7fbc755ce6014a56ad294"
+}
