@@ -1,0 +1,552 @@
+{
+  "_comment": "Собрано src.manifest по журналу и таблицам; руками не править.",
+  "demo": false,
+  "generated_utc": "2026-10-15T10:28:27+00:00",
+  "git_head": "43538a62f67d50c41ef63bb86854127822380a8c",
+  "log": "logs/calls.jsonl",
+  "hypotheses": {
+    "ids": [
+      "H1",
+      "H6",
+      "H9"
+    ],
+    "commit": "67d7108136a3877df3c6c6b82326d129ef5556ae",
+    "commit_time": "2026-10-14T22:00:45+03:00"
+  },
+  "prompt": {
+    "version_config": "v1",
+    "hash_config": "d946bcbce2dd",
+    "version_code": "v1",
+    "hash_code": "d946bcbce2dd"
+  },
+  "params": {
+    "temperature_main": 0,
+    "sc_repeats": 5,
+    "sc_temperature": 0.7,
+    "languages": [
+      "ru"
+    ],
+    "seed": 42,
+    "bootstrap_n": 1000,
+    "typeE": {
+      "_comment": "Тип E (шаг 06), используется src/typeE.py и src/run_classifier.py; seed — общий (поле seed). test_mode: enriched (n_test_failures отказов в тесте) или natural (естественная доля, ~7 из 200) — ожидает решения человека (flow/HUMAN_NOTES.md). shot_failures: сколько отказов в наборе few-shot данного размера; наборы вложенные (5 ⊂ 20). n_resamples: число случайных стратифицированных наборов для разброса LogReg/NB (без API). n_dev_rows: строки пула для отладки промпта (experiment=dev). После изменения параметров: .venv/bin/python -m src.typeE split && .venv/bin/python -m src.typeE classical (только до LLM-прогонов типа E).",
+      "dataset": "AI4I 2020 (UCI id 601)",
+      "data_file": "data/ai4i2020.csv",
+      "split_file": "data/e_split.json",
+      "test_mode": "enriched",
+      "n_test": 200,
+      "n_test_failures": 40,
+      "shots": [
+        0,
+        5,
+        20
+      ],
+      "shot_failures": {
+        "5": 2,
+        "20": 5
+      },
+      "n_resamples": 20,
+      "n_dev_rows": 6
+    }
+  },
+  "typeE_split_hash": "446cd9631466",
+  "calls_by_experiment": {
+    "cot": {
+      "first_utc": "2026-10-15T00:43:04.928+00:00",
+      "last_utc": "2026-10-15T09:52:10.102+00:00",
+      "records": 111,
+      "ok": 80,
+      "errors": 31,
+      "retried_requests": 3,
+      "unresolved_requests": 0
+    },
+    "dev": {
+      "first_utc": "2026-10-09T22:22:38.530+00:00",
+      "last_utc": "2026-10-14T18:28:36.484+00:00",
+      "records": 110,
+      "ok": 110,
+      "errors": 0,
+      "retried_requests": 0,
+      "unresolved_requests": 0
+    },
+    "followup_doubt": {
+      "first_utc": "2026-10-15T01:22:28.418+00:00",
+      "last_utc": "2026-10-15T09:52:56.023+00:00",
+      "records": 88,
+      "ok": 88,
+      "errors": 0,
+      "retried_requests": 0,
+      "unresolved_requests": 0
+    },
+    "main": {
+      "first_utc": "2026-10-15T00:39:12.717+00:00",
+      "last_utc": "2026-10-15T00:42:47.868+00:00",
+      "records": 152,
+      "ok": 152,
+      "errors": 0,
+      "retried_requests": 0,
+      "unresolved_requests": 0
+    },
+    "smoke": {
+      "first_utc": "2026-10-09T17:52:54.153+00:00",
+      "last_utc": "2026-10-15T09:51:03.815+00:00",
+      "records": 61,
+      "ok": 51,
+      "errors": 10,
+      "retried_requests": 3,
+      "unresolved_requests": 0
+    },
+    "typeE": {
+      "first_utc": "2026-10-15T03:19:10.759+00:00",
+      "last_utc": "2026-10-15T10:22:30.275+00:00",
+      "records": 2400,
+      "ok": 2400,
+      "errors": 0,
+      "retried_requests": 0,
+      "unresolved_requests": 0
+    }
+  },
+  "models": {
+    "deepseek-v4-pro": {
+      "provider": "openai_compat",
+      "model_requested": [
+        "deepseek-v4-pro"
+      ],
+      "model_reported": [
+        "deepseek-v4-pro"
+      ],
+      "params": [
+        {
+          "extra_body": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        }
+      ],
+      "effective_temperature": [
+        0.0
+      ],
+      "min_temperature": 0.0,
+      "max_tokens": [
+        null
+      ],
+      "experiments": [
+        "cot",
+        "followup_doubt",
+        "main",
+        "typeE"
+      ],
+      "first_utc": "2026-10-15T00:39:12.717+00:00",
+      "last_utc": "2026-10-15T10:22:30.275+00:00",
+      "records": 711,
+      "ok": 680,
+      "errors": 31,
+      "retried_requests": 3,
+      "unresolved_requests": 0,
+      "tokens_in": 524055,
+      "tokens_out": 190052,
+      "finish_reason_length": 0,
+      "periods": {
+        "cot": {
+          "first_utc": "2026-10-15T00:43:04.928+00:00",
+          "last_utc": "2026-10-15T09:52:10.102+00:00"
+        },
+        "followup_doubt": {
+          "first_utc": "2026-10-15T09:52:14.783+00:00",
+          "last_utc": "2026-10-15T09:52:56.023+00:00"
+        },
+        "main": {
+          "first_utc": "2026-10-15T00:39:12.717+00:00",
+          "last_utc": "2026-10-15T00:42:40.390+00:00"
+        },
+        "typeE": {
+          "first_utc": "2026-10-15T10:03:22.570+00:00",
+          "last_utc": "2026-10-15T10:22:30.275+00:00"
+        }
+      }
+    },
+    "gigachat-2-max": {
+      "provider": "gigachat",
+      "model_requested": [
+        "GigaChat-2-Max"
+      ],
+      "model_reported": [
+        "GigaChat-2-Max:2.0.30.01"
+      ],
+      "params": [
+        {}
+      ],
+      "effective_temperature": [
+        0.0001
+      ],
+      "min_temperature": 0.0001,
+      "max_tokens": [
+        null
+      ],
+      "experiments": [
+        "cot",
+        "followup_doubt",
+        "main",
+        "typeE"
+      ],
+      "first_utc": "2026-10-15T00:39:12.717+00:00",
+      "last_utc": "2026-10-15T03:45:11.965+00:00",
+      "records": 675,
+      "ok": 675,
+      "errors": 0,
+      "retried_requests": 0,
+      "unresolved_requests": 0,
+      "tokens_in": 76241,
+      "tokens_out": 104429,
+      "finish_reason_length": 0,
+      "periods": {
+        "cot": {
+          "first_utc": "2026-10-15T00:43:04.928+00:00",
+          "last_utc": "2026-10-15T00:45:11.942+00:00"
+        },
+        "followup_doubt": {
+          "first_utc": "2026-10-15T01:22:28.418+00:00",
+          "last_utc": "2026-10-15T01:24:11.706+00:00"
+        },
+        "main": {
+          "first_utc": "2026-10-15T00:39:12.717+00:00",
+          "last_utc": "2026-10-15T00:42:47.868+00:00"
+        },
+        "typeE": {
+          "first_utc": "2026-10-15T03:19:10.759+00:00",
+          "last_utc": "2026-10-15T03:45:11.965+00:00"
+        }
+      }
+    },
+    "qwen3-8b": {
+      "provider": "ollama",
+      "model_requested": [
+        "qwen3:8b"
+      ],
+      "model_reported": [
+        "qwen3:8b"
+      ],
+      "params": [
+        {
+          "options": {
+            "num_ctx": 8192
+          },
+          "think": false
+        }
+      ],
+      "effective_temperature": [
+        0.0
+      ],
+      "min_temperature": 0.0,
+      "max_tokens": [
+        null
+      ],
+      "experiments": [
+        "cot",
+        "followup_doubt",
+        "main",
+        "typeE"
+      ],
+      "first_utc": "2026-10-15T00:39:12.717+00:00",
+      "last_utc": "2026-10-15T03:51:24.280+00:00",
+      "records": 673,
+      "ok": 673,
+      "errors": 0,
+      "retried_requests": 0,
+      "unresolved_requests": 0,
+      "tokens_in": 650912,
+      "tokens_out": 259340,
+      "finish_reason_length": 0,
+      "periods": {
+        "cot": {
+          "first_utc": "2026-10-15T00:43:04.928+00:00",
+          "last_utc": "2026-10-15T00:44:16.505+00:00"
+        },
+        "followup_doubt": {
+          "first_utc": "2026-10-15T01:22:28.419+00:00",
+          "last_utc": "2026-10-15T01:23:20.251+00:00"
+        },
+        "main": {
+          "first_utc": "2026-10-15T00:39:12.717+00:00",
+          "last_utc": "2026-10-15T00:41:22.363+00:00"
+        },
+        "typeE": {
+          "first_utc": "2026-10-15T03:19:10.759+00:00",
+          "last_utc": "2026-10-15T03:51:24.280+00:00"
+        }
+      },
+      "ollama_base_url": [
+        "http://localhost:11435"
+      ],
+      "local_vram_mb_max": 4983.3,
+      "local_model_size_mb_max": 4983.3
+    },
+    "qwen3-8b-think": {
+      "provider": "ollama",
+      "model_requested": [
+        "qwen3:8b"
+      ],
+      "model_reported": [
+        "qwen3:8b"
+      ],
+      "params": [
+        {
+          "options": {
+            "num_ctx": 16384
+          },
+          "think": true
+        }
+      ],
+      "effective_temperature": [
+        0.0
+      ],
+      "min_temperature": 0.0,
+      "max_tokens": [
+        null
+      ],
+      "experiments": [
+        "cot"
+      ],
+      "first_utc": "2026-10-15T00:44:22.632+00:00",
+      "last_utc": "2026-10-15T00:46:49.569+00:00",
+      "records": 16,
+      "ok": 16,
+      "errors": 0,
+      "retried_requests": 0,
+      "unresolved_requests": 0,
+      "tokens_in": 5056,
+      "tokens_out": 17936,
+      "finish_reason_length": 0,
+      "periods": {
+        "cot": {
+          "first_utc": "2026-10-15T00:44:22.632+00:00",
+          "last_utc": "2026-10-15T00:46:49.569+00:00"
+        }
+      },
+      "ollama_base_url": [
+        "http://localhost:11435"
+      ],
+      "local_vram_mb_max": 4983.3,
+      "local_model_size_mb_max": 4983.3
+    },
+    "yandexgpt-pro-5.1": {
+      "provider": "openai_compat",
+      "model_requested": [
+        "gpt://b1gefd33pbo1ekddusqe/yandexgpt-5.1"
+      ],
+      "model_reported": [
+        "gpt://b1gefd33pbo1ekddusqe/yandexgpt-5.1"
+      ],
+      "params": [
+        {}
+      ],
+      "effective_temperature": [
+        0.0
+      ],
+      "min_temperature": 0.0,
+      "max_tokens": [
+        null
+      ],
+      "experiments": [
+        "cot",
+        "followup_doubt",
+        "main",
+        "typeE"
+      ],
+      "first_utc": "2026-10-15T00:39:12.717+00:00",
+      "last_utc": "2026-10-15T03:26:35.912+00:00",
+      "records": 676,
+      "ok": 676,
+      "errors": 0,
+      "retried_requests": 0,
+      "unresolved_requests": 0,
+      "tokens_in": 481381,
+      "tokens_out": 73189,
+      "finish_reason_length": 0,
+      "periods": {
+        "cot": {
+          "first_utc": "2026-10-15T00:43:04.928+00:00",
+          "last_utc": "2026-10-15T00:43:19.102+00:00"
+        },
+        "followup_doubt": {
+          "first_utc": "2026-10-15T01:22:28.419+00:00",
+          "last_utc": "2026-10-15T01:22:41.231+00:00"
+        },
+        "main": {
+          "first_utc": "2026-10-15T00:39:12.717+00:00",
+          "last_utc": "2026-10-15T00:39:42.798+00:00"
+        },
+        "typeE": {
+          "first_utc": "2026-10-15T03:19:10.759+00:00",
+          "last_utc": "2026-10-15T03:26:35.912+00:00"
+        }
+      }
+    }
+  },
+  "results": {
+    "cot_ru.jsonl": {
+      "rows": 80,
+      "errors": 0,
+      "parse_ok": 80,
+      "models": [
+        "deepseek-v4-pro",
+        "gigachat-2-max",
+        "qwen3-8b",
+        "qwen3-8b-think",
+        "yandexgpt-pro-5.1"
+      ],
+      "prompt_version": [
+        "v1"
+      ]
+    },
+    "dev_cot_ru.jsonl": {
+      "rows": 8,
+      "errors": 0,
+      "parse_ok": 8,
+      "models": [
+        "deepseek-v4-pro",
+        "gigachat-2-max",
+        "qwen3-8b",
+        "yandexgpt-pro-5.1"
+      ],
+      "prompt_version": [
+        "v1"
+      ]
+    },
+    "dev_followup_doubt_ru.jsonl": {
+      "rows": 10,
+      "errors": 0,
+      "parse_ok": 10,
+      "models": [
+        "deepseek-v4-pro",
+        "gigachat-2-max",
+        "qwen3-8b",
+        "yandexgpt-pro-5.1"
+      ],
+      "prompt_version": [
+        "v1"
+      ]
+    },
+    "dev_ru.jsonl": {
+      "rows": 20,
+      "errors": 0,
+      "parse_ok": 20,
+      "models": [
+        "deepseek-v4-pro",
+        "gigachat-2-max",
+        "qwen3-8b",
+        "yandexgpt-pro-5.1"
+      ],
+      "prompt_version": [
+        "v1"
+      ]
+    },
+    "dev_typeE_llm.jsonl": {
+      "rows": 72,
+      "errors": 0,
+      "parse_ok": 71,
+      "models": [
+        "deepseek-v4-pro",
+        "gigachat-2-max",
+        "qwen3-8b",
+        "yandexgpt-pro-5.1"
+      ],
+      "prompt_version": [
+        "v1"
+      ]
+    },
+    "followup_doubt_ru.jsonl": {
+      "rows": 88,
+      "errors": 0,
+      "parse_ok": 88,
+      "models": [
+        "deepseek-v4-pro",
+        "gigachat-2-max",
+        "qwen3-8b",
+        "yandexgpt-pro-5.1"
+      ],
+      "prompt_version": [
+        "v1"
+      ]
+    },
+    "graded_auto.jsonl": {
+      "rows": 2696
+    },
+    "main_ru.jsonl": {
+      "rows": 152,
+      "errors": 0,
+      "parse_ok": 149,
+      "models": [
+        "deepseek-v4-pro",
+        "gigachat-2-max",
+        "qwen3-8b",
+        "yandexgpt-pro-5.1"
+      ],
+      "prompt_version": [
+        "v1"
+      ]
+    },
+    "typeE_llm.jsonl": {
+      "rows": 2400,
+      "errors": 0,
+      "parse_ok": 2390,
+      "models": [
+        "deepseek-v4-pro",
+        "gigachat-2-max",
+        "qwen3-8b",
+        "yandexgpt-pro-5.1"
+      ],
+      "prompt_version": [
+        "v1"
+      ]
+    }
+  },
+  "d_exec": {
+    "runs": 24,
+    "code_found": 24,
+    "pass_at_1": 22,
+    "timed_out": 0,
+    "first_utc": "2026-10-15T01:24:21+00:00",
+    "last_utc": "2026-10-15T01:29:27+00:00"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "packages": {
+      "openai": "3.27.0",
+      "gigachat": "0.2.3",
+      "httpx": "0.28.1",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0"
+    },
+    "requirements_sha256": "a76e2dd1684627201dfca0192ceb014925e4b9b6400832f28f6f6898c39fd8b3"
+  },
+  "ollama_server": {
+    "hostname": "DESKTOP-GM9R4PJ",
+    "os": "Майкрософт Windows 10 Pro 10.0.19045",
+    "cpu": "AMD Ryzen Threadripper 3970X 32-Core Processor",
+    "cpu_threads": 64,
+    "ram_modules": [
+      "8 GB 2133 MHz",
+      "8 GB 2133 MHz",
+      "8 GB 2133 MHz",
+      "8 GB 2133 MHz"
+    ],
+    "gpu": [
+      "NVIDIA GeForce RTX 3090, 24576 MiB, 591.74"
+    ],
+    "ram_gb": 31.9,
+    "models": [
+      "qwen3:8b 500a1f067a9f"
+    ],
+    "ollama_version": "0.40.2",
+    "ollama_base_url": "http://localhost:11435",
+    "ssh_host": "gpu",
+    "collected_utc": "2026-10-15T01:29:50+00:00",
+    "note": "Со слов владельца, оперативная память ПК сбоит (возможны падения и перезагрузки). Ollama запускается внутри ssh-сессии (scripts/gpu_ollama.sh, туннель localhost:11435). Каждый вызов сразу пишется в logs/calls.jsonl, после падения прогон продолжается из кэша; ответы с ошибкой соединения не считаются ответами модели."
+  }
+}
