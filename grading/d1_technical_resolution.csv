@@ -1,0 +1,52 @@
+﻿item_id,task_id,call_id,original_r1,original_r2,technical_d1,case,encoding_disagreement,substantive_disagreement,reviewer_kind,code_sha256,evidence,reason
+D001,D1,c1e2b37336d143c7b7acd6360c5100a9,0,0,0,preprocessing_on_train,False,False,ai_technical_adjudication,717b0cbb5a7f0c106c802fc14fdb2ec357386cc7f984e7ff07787395f8808060,"14: X_train, X_test, y_train, y_test = train_test_split(
+19: pipeline = Pipeline([
+33: grid_search.fit(X_train, y_train)","StandardScaler внутри Pipeline, GridSearchCV получает только train."
+D002,D4,db233ae2ee93462abd9b4390f56cba54,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,8ba1dfe3c56be2fc0f5546d3e87d2cb6c3e2ef24934eb1f127bb658b7b27a043,"12: X_train, X_test, y_train, y_test = train_test_split(
+31: best_knn.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D003,D4,8f6be4c034ce44e9bd11d4097a551613,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,682b03ee4f77a82203d665feb2122c38b080d723671414fa82ccedd2985c7624,"11: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+28: knn_best.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D004,D3,9f1cc83e80b44e8f8a2a8d424a07c759,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,f7a5ed9aaa0eb989f0240b972099ce0d2c21850f3c1fe8e39ae378f29661fe75,"12: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+27: grid_search.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D005,D3,54fb8126d8bb4a3c92b4fe07df6bb2d6,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,85fcf7b875e83ec68bef0333f721bc3d8a6b841d7ce2a38d2b6c8220b36df944,"17: X_train, X_test, y_train, y_test = train_test_split(
+41: grid_search.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D006,D6,cf098745e5104fd5b147c7458a1a2620,н/п,н/п,н/п,clustering_without_holdout,False,False,ai_technical_adjudication,29693f6701d625fa5699fb440e0d20737e83eef95661458f80af7154cca39682,12: X_scaled = scaler.fit_transform(X),Кластеризация по условию без train/test; масштабирование всех X допустимо.
+D007,D6,fac649aeff1e4cb1847de682118831ef,н/п,н/п,н/п,clustering_without_holdout,False,False,ai_technical_adjudication,7eb60b3da7f1c99a0400eb3adff08f8279de43af40296d610d5f9eb2336e7d9c,13: X_scaled = scaler.fit_transform(X),Кластеризация по условию без train/test; масштабирование всех X допустимо.
+D008,D2,01266290caff46cbaa9daf9cfaaff282,0,0,0,preprocessing_on_train,False,False,ai_technical_adjudication,3777d0785921276f5f2c8518fba54673dbbe3d40e2086b3f39a6ee17dee4b1a2,"13: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+16: pipeline = Pipeline([
+22: pipeline.fit(X_train, y_train)",PCA обучается на train и применяется к test; утечки нет.
+D009,D5,cd07e9c289194a2c89a07a5c5b894a6b,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,42163c31067fbbc86f2906974ec92fa9cd9f113dd4f6db03b00055aa8fc1c480,"12: X_train, X_test, y_train, y_test = train_test_split(
+34: final_model.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D010,D2,1c7e9d089b35453ab39ecbe33c138f7b,0,0,0,preprocessing_on_train,False,False,ai_technical_adjudication,1fa0ace2e0dfdbd034988fba89c578c1561a6e0f39e4d5bf7fe4f0d79ccfac8a,"13: X_train, X_test, y_train, y_test = train_test_split(
+18: pipeline = Pipeline([
+24: pipeline.fit(X_train, y_train)",PCA обучается на train и применяется к test; утечки нет.
+D011,D6,82d93e8c2a544fc1ae5d30d32ad7fb76,н/п,н/п,н/п,clustering_without_holdout,False,False,ai_technical_adjudication,f9d37e66fc0d3db3bb30b5f1fe60918019d9cb6a2f8bcdf74dbbe9e5cb1b051e,13: X_scaled = scaler.fit_transform(X),Кластеризация по условию без train/test; масштабирование всех X допустимо.
+D012,D4,9576f7087fc24a9d921fe67edd9528b3,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,43d65accc778fd760d7e95caa75c6de4314447e38b8fa15e71b99f51da4a2986,"11: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+25: knn.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D013,D1,e74d5f8346f24e88b175731f457028d8,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,8948866e772d30751515175337d812ae01f7717ec27f24b71ec59d217ce14fc0,"11: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+16: grid_search.fit(X_train, y_train)
+21: best_model.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D014,D4,fd2709dc684a411f89c5e19686cf1cf6,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,8258a92afddf22ab5ffe5cfce0a3ea56467caf162b7acab1ac1b950030a44ec3,"11: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+30: best_model.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D015,D5,3093a54077ae42b197d657b994535c4c,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,47c2ad59765c602184152cd5169f01d0c08053554234e3d6c14c0142836fdd8a,"11: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+30: final_ridge.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D016,D3,5a4c002b81c647f0b0e1bddcdb8f33f6,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,53e0a7c4bf6108dca73b0d65e09b232e4542ca1c66d8b66acfd6d20b1e3bd386,"16: X_train, X_test, y_train, y_test = train_test_split(
+36: grid_search.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D017,D2,6823ea357b7a44178d8c6fbf8f1247da,0,0,0,preprocessing_on_train,False,False,ai_technical_adjudication,8fead11fef83a569fde8c8f6645ab24eca93d948216b309e3c80fbb1793a96e0,"13: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+16: pipeline = make_pipeline(PCA(n_components=0.95), LogisticRegression(max_iter=10000, random_state=42))
+19: pipeline.fit(X_train, y_train)",PCA обучается на train и применяется к test; утечки нет.
+D018,D1,2d4bb7a5296144a584acac74104f7dd1,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,a114c2157254a6ff03a1f6094820171f7bce5fa5262dc93de880cd537047b513,"11: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+19: grid_search.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D019,D1,d01acf6fcb77458ba6458b24746806fe,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,1e05031e0d81ce458bc4a208389634798ba791b4bbfbd9ee8fb42d32c8a72982,"12: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+25: grid_search.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D020,D2,448bfcaecb70418d9cabf1fcb69e8304,0,0,0,preprocessing_on_train,False,False,ai_technical_adjudication,94e2a6f868afab573e7d27f66b669ea97499c0ca1e847752f4d7e02724bf1c93,"13: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+17: X_train_pca = pca.fit_transform(X_train)
+22: log_reg.fit(X_train_pca, y_train)",PCA обучается на train и применяется к test; утечки нет.
+D021,D5,fb83d2f87a76450484f449dbb8cbdb9e,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,2425fce05d43aedd93a533f87b20cee924d90ae8a6c64a8401801aa3072a62b7,"12: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+19: grid_search.fit(X_train, y_train)
+24: best_model.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D022,D3,684bd9eabe4e447f9ce0f0afa66220ee,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,d7e9e4abd4447fab4ce90ed2b34cfa64b4e4dcbb8feb3d0f9dfa3bd8d54d207e,"10: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+20: grid_search.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D023,D5,7fedaf7f39e7422db7ffbf8a3402a85e,н/п,0,0,no_learned_preprocessing,True,False,ai_technical_adjudication,ba48e177b628f7fa4860e5b346fae36781c74f83519c5fafce84fee8d67e7b94,"12: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+33: best_model.fit(X_train, y_train)",В коде нет обучаемого препроцессинга: утечки через него нет. «0» и прежнее «н/п» означают одно отсутствие ошибки.
+D024,D6,e11e94c1c207428997d92ecbb7c7bb50,н/п,н/п,н/п,clustering_without_holdout,False,False,ai_technical_adjudication,de839cf38d500d21c47606b65f6e6ada03388769adb14a834479b654eebf923d,13: X_scaled = scaler.fit_transform(X),Кластеризация по условию без train/test; масштабирование всех X допустимо.

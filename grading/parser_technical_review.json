@@ -1,0 +1,16 @@
+{
+  "reviewer_kind": "ai_technical_audit",
+  "is_human": false,
+  "label_policy": "Сохранена прежняя мягкая нормализация: «возможен/возможно отказ» → 1. Это неоднозначный ответ и нарушение точного формата, но не ошибка извлечения по действующему правилу. Строгая оценка таких ответов как неразобранных здесь не подменяет основной эксперимент.",
+  "multiple_numbers_policy": "Сохранено правило первого числа для скалярного ответа (включая A2/F2). Для S14 извлечение 2.0 из 2;2;0.5 неполно и отмечено отдельно. Автооценка «неверно» остаётся верной: модель дала числа при недостатке данных.",
+  "meaning": "Согласие означает корректность извлечения и автооценки, а не совпадение прогноза с эталоном.",
+  "human_judgments_modified": false,
+  "model_responses_or_scores_modified": false,
+  "source": "grading/parser_spotcheck.csv",
+  "source_sha256": "ccb54c8c87cfbc845ef7853f1d18cb1b2c3fe1e4fae4431edef79e0f23bc98ae",
+  "output": "grading/parser_technical_review.csv",
+  "output_sha256": "f58632bb2b554e685ab5d36eb28970175ba10e932cf314874adc94690fcc6e92",
+  "n": 20,
+  "n_agree": 19,
+  "n_ambiguous_labels": 4
+}

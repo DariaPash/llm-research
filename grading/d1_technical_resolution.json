@@ -1,0 +1,27 @@
+{
+  "status": "applicability_ambiguity_resolved_technically",
+  "reviewer_kind": "ai_technical_adjudication",
+  "is_human": false,
+  "authority": "Пользователь поручил ассистенту разобраться с D; grading/submission_confirmation.json",
+  "raw_agreement": {
+    "n": 24,
+    "agreement": 0.375,
+    "kappa": 0.09999999999999996
+  },
+  "encoding_disagreements": 15,
+  "substantive_disagreements": 0,
+  "case_counts": {
+    "clustering_without_holdout": 4,
+    "no_learned_preprocessing": 15,
+    "preprocessing_on_train": 5
+  },
+  "human_scores_modified": false,
+  "original_kappa_replaced": false,
+  "new_human_rerating_claimed": false,
+  "interpretation": "15 несовпадений вызваны кодировкой отсутствующего препроцессинга как 0 или н/п. Все 24 случая разрешены по коду и условию. Исходная κ=0,1 сохраняется. Согласие после технического решения не выдаётся за новую независимую каппу людей.",
+  "sha256": {
+    "grading/sheet_r1.csv": "f8d6abb25d2d7d6c0a90166569d4bf04fe13041d3f6cc652e310197dd5d131c7",
+    "grading/sheet_r2.csv": "8ad8757f3469e43e7e5888e1a020349f2cb651f8aec5434780fb3ef249bc1696",
+    "grading/d1_technical_resolution.csv": "02e4946db771b6d61c9ab411e4cdf0b7da9090a1007e164982b77b3c840f4451"
+  }
+}
