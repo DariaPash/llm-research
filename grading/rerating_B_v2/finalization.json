@@ -1,0 +1,122 @@
+{
+  "documentation_status": "complete_with_current_user_confirmation",
+  "decision_kind": "shared_recommendations_adopted_per_user_report",
+  "reviewers": {
+    "r1": "Дарья",
+    "r2": "Никита"
+  },
+  "approval_source": "Сообщение пользователя: Дарья и Никита прочитали предложения и согласны с ними; поручено внести их в листы.",
+  "independent_rerating_completed": false,
+  "independent_completed_sheets_received": false,
+  "independent_completed_sheet_paths": [],
+  "consensus_snapshots": [
+    "grading/rerating_B_v2/consensus_r1.csv",
+    "grading/rerating_B_v2/consensus_r2.csv"
+  ],
+  "initial_B": {
+    "n": 32,
+    "agreement": 0.84375,
+    "kappa_unweighted": 0.5897435897435898
+  },
+  "post_consensus_B_descriptive_only": {
+    "n": 32,
+    "agreement": 1.0,
+    "kappa_unweighted": 1.0
+  },
+  "independent_kappa_threshold_met": false,
+  "G2_closed_by_this_record": false,
+  "affected_item_ids": [
+    "B003",
+    "B006",
+    "B009",
+    "B011",
+    "B012",
+    "B020",
+    "B022",
+    "B029"
+  ],
+  "sha256": {
+    "grading/rerating_B_v2/adoption_by_user.json": "9da23b7c816deea5098a648933b6e9e22795903d47d832430e20b370a1a7e62b",
+    "grading/rerating_B_v2/review_ai_draft.json": "4e9e429cf7e567bf6f53dfa9395b4e3ad97ecd44062cbdad8adb5751709479d8",
+    "grading/rerating_B_v2/rubrics.json": "523d2722a29fe55b0b87838a784c44324a42838d0b7371d6f9c14b61383f6480",
+    "grading/rerating_B_v2/baseline_r1.csv": "24ed26b9c94922a7d46911bbe3a1c1df45a49c14ce4a81df4bcfdbcdb6ef4a58",
+    "grading/rerating_B_v2/baseline_r2.csv": "14cd0c8072edb69dd1db11ba40d9fd06f685d3a61b91e989300fe88771ae5c0c",
+    "grading/rerating_B_v2/consensus_r1.csv": "f8d6abb25d2d7d6c0a90166569d4bf04fe13041d3f6cc652e310197dd5d131c7",
+    "grading/rerating_B_v2/consensus_r2.csv": "8ad8757f3469e43e7e5888e1a020349f2cb651f8aec5434780fb3ef249bc1696",
+    "grading/rerating_B_v2/provenance_clarification_by_user.json": "5a50665b35ce736f7c791705437c22d8722dee4bafff995ec2127f8fa51cdaed",
+    "grading/rerating_B_v2/sheet_r1_ai_independent.csv": "011225929cd6f65cb392acf7b5f7e9ded9e8d24d9aabc74e97ae016057de9184",
+    "grading/rerating_B_v2/review_r1_ai_independent.json": "ea4291fa6370ab9764a627f57a3b15dea3bf72cd3c074eb9f3885d454603e9f4",
+    "grading/rerating_B_v2/sheet_r2_ai_independent.csv": "013f74b2ed82aac347f0c038832d7fd6d29104b916bb44a598488193019ac221",
+    "grading/rerating_B_v2/review_r2_ai_independent.json": "c8dc678667c7c49d81eb8c0f7136e37c25a5ab179461c4a895beebd144dc6a76",
+    "grading/rerating_B_v2/sheet_r1_attributed.csv": "fcb70144dab0b32649b21de84c404c08d4eeee60c1863277b5930138cf0fb2a7",
+    "grading/rerating_B_v2/sheet_r2_attributed.csv": "c241676aa8383dfeb21f671d9d45d800d760f717c70e961972ffe25f7d22ff82",
+    "grading/rerating_B_v2/reviewer_attribution.json": "4b64d9806f9fe793d24e46d27a819d0174addb60a06b6bb802eb237472e62e58",
+    "grading/submission_confirmation.json": "304dd31d8dcf11fb55169e2a30b77b14629c8e84b7173d63fb322106ee689ad7",
+    "grading/submission_approval/report_as_approved.md": "28c2c93264d92619560de132a04948a12d2a5f759d2fe041cfaa9eb67110fc1a"
+  },
+  "reviewer_attribution": {
+    "status": "user_attribution_recorded_provenance_conflict_retained",
+    "attribution_basis": "Пользователь сообщил, что оценки выполнили реальные студенты Дарья (r1) и Никита (r2), а пометки ИИ были шуткой, и попросил учитывать эти документы как человеческие проверки.",
+    "human_origin_reported_by_user": true,
+    "human_origin_verified": false,
+    "independent_human_review_verified": false,
+    "G2_closed_by_this_record": false,
+    "reviewers": [
+      {
+        "rater": "r1",
+        "display_name": "Дарья",
+        "attributed_sheet": "grading/rerating_B_v2/sheet_r1_attributed.csv",
+        "source_sheet": "grading/rerating_B_v2/sheet_r1_ai_independent.csv",
+        "source_metadata": "grading/rerating_B_v2/review_r1_ai_independent.json",
+        "n_items": 8
+      },
+      {
+        "rater": "r2",
+        "display_name": "Никита",
+        "attributed_sheet": "grading/rerating_B_v2/sheet_r2_attributed.csv",
+        "source_sheet": "grading/rerating_B_v2/sheet_r2_ai_independent.csv",
+        "source_metadata": "grading/rerating_B_v2/review_r2_ai_independent.json",
+        "n_items": 8
+      }
+    ],
+    "original_files_modified": false,
+    "working_scores_modified": false,
+    "sha256": {
+      "grading/rerating_B_v2/provenance_clarification_by_user.json": "5a50665b35ce736f7c791705437c22d8722dee4bafff995ec2127f8fa51cdaed",
+      "grading/rerating_B_v2/sheet_r1_ai_independent.csv": "011225929cd6f65cb392acf7b5f7e9ded9e8d24d9aabc74e97ae016057de9184",
+      "grading/rerating_B_v2/review_r1_ai_independent.json": "ea4291fa6370ab9764a627f57a3b15dea3bf72cd3c074eb9f3885d454603e9f4",
+      "grading/rerating_B_v2/sheet_r2_ai_independent.csv": "013f74b2ed82aac347f0c038832d7fd6d29104b916bb44a598488193019ac221",
+      "grading/rerating_B_v2/review_r2_ai_independent.json": "c8dc678667c7c49d81eb8c0f7136e37c25a5ab179461c4a895beebd144dc6a76"
+    },
+    "independence_confirmed_by_user": true,
+    "current_confirmation_record": "grading/submission_confirmation.json"
+  },
+  "current_user_confirmation": {
+    "record_date": "2026-10-26",
+    "source": "Сообщение пользователя в текущем диалоге",
+    "user_message_verbatim": "авторы прочитали и утвержили текст - зафиксируй это. Проверки независимые. Насчёт D - разберись сам с этим",
+    "report_read_and_approved_by_authors_reported_by_user": true,
+    "review_independence_confirmed_by_user": true,
+    "reviewers": {
+      "r1": "Дарья",
+      "r2": "Никита"
+    },
+    "confirmation_kind": "user_attestation",
+    "independent_verification_performed_by_assistant": false,
+    "new_independent_review_submissions_received": false,
+    "historical_provenance_records_preserved": true,
+    "historical_ai_metadata_reclassified_as_human": false,
+    "D_technical_resolution_delegated_to_assistant": true,
+    "approval_scope": "Текст отчёта на момент сообщения утверждён авторами по сообщению пользователя. Последующее техническое разрешение D явно поручено ассистенту; оно не является новой человеческой переоценкой.",
+    "approved_report_snapshot": "grading/submission_approval/report_as_approved.md",
+    "sha256": {
+      "grading/submission_approval/report_as_approved.md": "28c2c93264d92619560de132a04948a12d2a5f759d2fe041cfaa9eb67110fc1a",
+      "grading/sheet_r1.csv": "f8d6abb25d2d7d6c0a90166569d4bf04fe13041d3f6cc652e310197dd5d131c7",
+      "grading/sheet_r2.csv": "8ad8757f3469e43e7e5888e1a020349f2cb651f8aec5434780fb3ef249bc1696"
+    }
+  },
+  "historical_fields_are_not_current_user_attestation": true,
+  "historical_documentation_status": "complete_consensus_recorded",
+  "current_review_status": "independence_confirmed_by_user",
+  "current_text_status": "approved_by_authors_per_user_report"
+}

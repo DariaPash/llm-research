@@ -1,0 +1,37 @@
+{
+  "status": "user_attribution_recorded_provenance_conflict_retained",
+  "attribution_basis": "Пользователь сообщил, что оценки выполнили реальные студенты Дарья (r1) и Никита (r2), а пометки ИИ были шуткой, и попросил учитывать эти документы как человеческие проверки.",
+  "human_origin_reported_by_user": true,
+  "human_origin_verified": false,
+  "independent_human_review_verified": false,
+  "G2_closed_by_this_record": false,
+  "reviewers": [
+    {
+      "rater": "r1",
+      "display_name": "Дарья",
+      "attributed_sheet": "grading/rerating_B_v2/sheet_r1_attributed.csv",
+      "source_sheet": "grading/rerating_B_v2/sheet_r1_ai_independent.csv",
+      "source_metadata": "grading/rerating_B_v2/review_r1_ai_independent.json",
+      "n_items": 8
+    },
+    {
+      "rater": "r2",
+      "display_name": "Никита",
+      "attributed_sheet": "grading/rerating_B_v2/sheet_r2_attributed.csv",
+      "source_sheet": "grading/rerating_B_v2/sheet_r2_ai_independent.csv",
+      "source_metadata": "grading/rerating_B_v2/review_r2_ai_independent.json",
+      "n_items": 8
+    }
+  ],
+  "original_files_modified": false,
+  "working_scores_modified": false,
+  "sha256": {
+    "grading/rerating_B_v2/provenance_clarification_by_user.json": "5a50665b35ce736f7c791705437c22d8722dee4bafff995ec2127f8fa51cdaed",
+    "grading/rerating_B_v2/sheet_r1_ai_independent.csv": "011225929cd6f65cb392acf7b5f7e9ded9e8d24d9aabc74e97ae016057de9184",
+    "grading/rerating_B_v2/review_r1_ai_independent.json": "ea4291fa6370ab9764a627f57a3b15dea3bf72cd3c074eb9f3885d454603e9f4",
+    "grading/rerating_B_v2/sheet_r2_ai_independent.csv": "013f74b2ed82aac347f0c038832d7fd6d29104b916bb44a598488193019ac221",
+    "grading/rerating_B_v2/review_r2_ai_independent.json": "c8dc678667c7c49d81eb8c0f7136e37c25a5ab179461c4a895beebd144dc6a76"
+  },
+  "independence_confirmed_by_user": true,
+  "current_confirmation_record": "grading/submission_confirmation.json"
+}

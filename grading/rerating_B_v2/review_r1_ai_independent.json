@@ -1,0 +1,59 @@
+{
+  "reviewer": "Дарья (ИИ-рецензент)",
+  "is_human": false,
+  "independent_session": true,
+  "prior_scores_seen": false,
+  "blind_to_other_rater": true,
+  "rubric_author": false,
+  "human_review_completed": false,
+  "G2_closed_by_this_review": false,
+  "review_date": "2026-10-26",
+  "input_sheet": "/Users/user/.local/share/opencode/worktree/aeeddd/ml3-audit/grading/rerating_B_v2/sheet_r1.csv",
+  "output_sheet": "/Users/user/.local/share/opencode/worktree/aeeddd/ml3-audit/grading/rerating_B_v2/sheet_r1_ai_independent.csv",
+  "rubric_version": "B-v2-2026-10-26",
+  "sha256": {
+    "/Users/user/.local/share/opencode/worktree/aeeddd/ml3-audit/grading/rerating_B_v2/REVIEWER_INSTRUCTIONS.md": "2f857a9d2e24ed70c301262eca3ba0a18999aa69daeedfe8ddeeb625b55adf52",
+    "/Users/user/.local/share/opencode/worktree/aeeddd/ml3-audit/grading/rerating_B_v2/sheet_r1.csv": "7b3f5522abd849f292eec937db212c9b0a60907a7e4322341828bad2fcb9530c"
+  },
+  "full_answers_reviewed": 8,
+  "scores": [
+    {
+      "item_id": "B003",
+      "score_0_2": 1
+    },
+    {
+      "item_id": "B006",
+      "score_0_2": 1
+    },
+    {
+      "item_id": "B009",
+      "score_0_2": 1
+    },
+    {
+      "item_id": "B011",
+      "score_0_2": 1
+    },
+    {
+      "item_id": "B012",
+      "score_0_2": 2
+    },
+    {
+      "item_id": "B020",
+      "score_0_2": 0
+    },
+    {
+      "item_id": "B022",
+      "score_0_2": 1
+    },
+    {
+      "item_id": "B029",
+      "score_0_2": 1
+    }
+  ],
+  "limitations": [
+    "Машинная оценка отдельной ИИ-сессии, не оценка студента или человека.",
+    "Не подтверждает участие двух людей, не завершает человеческую проверку и не закрывает G2.",
+    "Входы ограничены REVIEWER_INSTRUCTIONS.md и sheet_r1.csv; другие листы, прежние оценки и результаты не просматривались.",
+    "Веб, внешние LLM API и дополнительные субагенты не использовались; каппа не рассчитывалась, оценки под согласие или порог не подгонялись."
+  ]
+}

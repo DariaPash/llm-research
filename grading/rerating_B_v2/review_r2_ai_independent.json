@@ -1,0 +1,71 @@
+{
+  "reviewer": "Никита (ИИ-рецензент)",
+  "review_date": "2026-10-26",
+  "is_human": false,
+  "independent_session": true,
+  "prior_scores_seen": false,
+  "blind_to_other_rater": true,
+  "rubric_author": false,
+  "human_review_completed": false,
+  "G2_closed_by_this_review": false,
+  "input_sheet": "/Users/user/.local/share/opencode/worktree/aeeddd/ml3-audit/grading/rerating_B_v2/sheet_r2.csv",
+  "output_sheet": "/Users/user/.local/share/opencode/worktree/aeeddd/ml3-audit/grading/rerating_B_v2/sheet_r2_ai_independent.csv",
+  "rubric_version": "B-v2-2026-10-26",
+  "input_sha256": {
+    "/Users/user/.local/share/opencode/worktree/aeeddd/ml3-audit/grading/rerating_B_v2/REVIEWER_INSTRUCTIONS.md": "2f857a9d2e24ed70c301262eca3ba0a18999aa69daeedfe8ddeeb625b55adf52",
+    "/Users/user/.local/share/opencode/worktree/aeeddd/ml3-audit/grading/rerating_B_v2/sheet_r2.csv": "7b3f5522abd849f292eec937db212c9b0a60907a7e4322341828bad2fcb9530c"
+  },
+  "full_answers_reviewed": 8,
+  "scores": [
+    {
+      "item_id": "B003",
+      "score_0_2": 1
+    },
+    {
+      "item_id": "B006",
+      "score_0_2": 1
+    },
+    {
+      "item_id": "B009",
+      "score_0_2": 1
+    },
+    {
+      "item_id": "B011",
+      "score_0_2": 1
+    },
+    {
+      "item_id": "B012",
+      "score_0_2": 2
+    },
+    {
+      "item_id": "B020",
+      "score_0_2": 0
+    },
+    {
+      "item_id": "B022",
+      "score_0_2": 1
+    },
+    {
+      "item_id": "B029",
+      "score_0_2": 1
+    }
+  ],
+  "source_validation": {
+    "row_count": 8,
+    "unique_id_count": 8,
+    "score_and_comment_initially_empty": true
+  },
+  "output_validation": {
+    "encoding": "UTF-8 with BOM",
+    "other_cells_unchanged": true,
+    "original_row_order_preserved": true,
+    "verbatim_quotes_checked": true
+  },
+  "limitations": [
+    "Машинная оценка отдельной ИИ-сессии; рецензент не является реальным студентом или человеком.",
+    "Аудит не подтверждает человеческую проверку или участие двух людей и не закрывает G2.",
+    "Единственные входные файлы — REVIEWER_INSTRUCTIONS.md и sheet_r2.csv; другие листы, прежние оценки и материалы другого рецензента не просматривались.",
+    "Оценка выполнена независимо по полным ответам и уточнённым рубрикам CSV; без веба, внешних LLM API, дополнительных субагентов, согласования оценок, вычисления каппы или подгонки под порог.",
+    "Баллы являются суждениями ИИ по заданной рубрике, а не результатами проверки реальным студентом."
+  ]
+}

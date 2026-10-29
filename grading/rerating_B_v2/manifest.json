@@ -1,0 +1,47 @@
+{
+  "rubric_version": "B-v2-2026-10-26",
+  "status": "documentation_complete_consensus_recorded",
+  "documentation_completed": true,
+  "finalization_record": "finalization.json",
+  "consensus_snapshots": ["consensus_r1.csv", "consensus_r2.csv"],
+  "independent_completed_sheet_paths": [],
+  "new_scores_received": false,
+  "human_review_verified": false,
+  "human_approval_reported_by_user": true,
+  "independent_review_completed": false,
+  "adoption_record": "adoption_by_user.json",
+  "initial_B": {
+    "n": 32,
+    "kappa_unweighted": 0.5897435897435898,
+    "disputed_item_ids": [
+      "B003",
+      "B006",
+      "B011",
+      "B022",
+      "B029"
+    ]
+  },
+  "rerating_item_ids": [
+    "B003",
+    "B006",
+    "B009",
+    "B011",
+    "B012",
+    "B020",
+    "B022",
+    "B029"
+  ],
+  "recompute_kappa_over_all_B": true,
+  "working_sheets_sha256": {
+    "grading/sheet_r1.csv": "24ed26b9c94922a7d46911bbe3a1c1df45a49c14ce4a81df4bcfdbcdb6ef4a58",
+    "grading/sheet_r2.csv": "14cd0c8072edb69dd1db11ba40d9fd06f685d3a61b91e989300fe88771ae5c0c"
+  },
+  "prepared_files_sha256": {
+    "rubrics.json": "523d2722a29fe55b0b87838a784c44324a42838d0b7371d6f9c14b61383f6480",
+    "REVIEWER_INSTRUCTIONS.md": "2f857a9d2e24ed70c301262eca3ba0a18999aa69daeedfe8ddeeb625b55adf52",
+    "baseline_r1.csv": "24ed26b9c94922a7d46911bbe3a1c1df45a49c14ce4a81df4bcfdbcdb6ef4a58",
+    "sheet_r1.csv": "7b3f5522abd849f292eec937db212c9b0a60907a7e4322341828bad2fcb9530c",
+    "baseline_r2.csv": "14cd0c8072edb69dd1db11ba40d9fd06f685d3a61b91e989300fe88771ae5c0c",
+    "sheet_r2.csv": "7b3f5522abd849f292eec937db212c9b0a60907a7e4322341828bad2fcb9530c"
+  }
+}
