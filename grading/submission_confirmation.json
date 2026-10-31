@@ -1,0 +1,21 @@
+{
+  "record_date": "2026-10-26",
+  "source": "Сообщение пользователя в текущем диалоге",
+  "user_message_verbatim": "авторы прочитали и утвержили текст - зафиксируй это. Проверки независимые. Насчёт D - разберись сам с этим",
+  "report_read_and_approved_by_authors_reported_by_user": true,
+  "review_independence_confirmed_by_user": true,
+  "reviewers": {"r1": "Дарья", "r2": "Никита"},
+  "confirmation_kind": "user_attestation",
+  "independent_verification_performed_by_assistant": false,
+  "new_independent_review_submissions_received": false,
+  "historical_provenance_records_preserved": true,
+  "historical_ai_metadata_reclassified_as_human": false,
+  "D_technical_resolution_delegated_to_assistant": true,
+  "approval_scope": "Текст отчёта на момент сообщения утверждён авторами по сообщению пользователя. Последующее техническое разрешение D явно поручено ассистенту; оно не является новой человеческой переоценкой.",
+  "approved_report_snapshot": "grading/submission_approval/report_as_approved.md",
+  "sha256": {
+    "grading/submission_approval/report_as_approved.md": "28c2c93264d92619560de132a04948a12d2a5f759d2fe041cfaa9eb67110fc1a",
+    "grading/sheet_r1.csv": "f8d6abb25d2d7d6c0a90166569d4bf04fe13041d3f6cc652e310197dd5d131c7",
+    "grading/sheet_r2.csv": "8ad8757f3469e43e7e5888e1a020349f2cb651f8aec5434780fb3ef249bc1696"
+  }
+}
