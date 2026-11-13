@@ -185,7 +185,7 @@ def main(argv=None) -> int:
     ap.add_argument(
         "--results-dir",
         default=None,
-        help="отдельный каталог ответов и d_exec (например results/extra)",
+        help="отдельный каталог ответов и d_exec (например results/korolev)",
     )
     ap.add_argument("--models", default=None, help="только указанные ключи моделей")
     ap.add_argument("--demo", action="store_true", help="читать и писать demo/results/")

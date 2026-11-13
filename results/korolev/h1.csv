@@ -1,0 +1,7 @@
+model_key,n_pairs,acc_a,acc_a_ci_low,acc_a_ci_high,acc_b,acc_b_ci_low,acc_b_ci_high,diff_a_minus_b,diff_ci_low,diff_ci_high,only_a_correct,only_b_correct,mcnemar_p,pool,n_models
+gigachat-2-max,5,0.8,0.4,1.0,0.6,0.2,1.0,0.2,0.0,0.6,1,0,1.0,available_models,1
+yandexgpt-pro-5.1,5,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0,0,1.0,available_models,1
+deepseek-v4-pro,5,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0,0,1.0,available_models,1
+qwen3-8b,5,0.6,0.2,1.0,0.8,0.4,1.0,-0.2,-0.6,0.0,0,1,1.0,available_models,1
+korolev-k5,5,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0,0,1.0,available_models,1
+все,25,0.88,0.72,1.0,0.88,0.72,1.0,0.0,0.0,0.0,1,1,1.0,available_models,5

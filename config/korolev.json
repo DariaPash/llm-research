@@ -1,0 +1,91 @@
+{
+  "_comment": "Профиль расширения ЛР3. Рабочее подключение korolev-k5 описано в config/models.json; протокол веб-ассистента не отождествляется с публичным OpenAI API. Исторические результаты четырёх моделей сохранены отдельно.",
+  "date_checked": "2026-11-13",
+  "platform": {
+    "name": "Королёв ИИ",
+    "organization": "МГТУ им. Н. Э. Баумана",
+    "website": "https://korolev-ai.bmstu.ru/",
+    "assistant_url": "https://assistant.korolev-ai.bmstu.ru/",
+    "manual_url": "https://korolev-ai.bmstu.ru/manual-assistant.pdf",
+    "access": "Университетский SSO для студентов и сотрудников"
+  },
+  "observation": {
+    "method": "Штатный SSO-вход и авторизованный GET списка моделей",
+    "source_url": "https://assistant.korolev-ai.bmstu.ru/api/models",
+    "http_status": 200,
+    "scope": "Доступность списка на дату проверки; не проверка генерации или API-ключа",
+    "secrets_stored": false
+  },
+  "available_models": [
+    {
+      "id": "project_analyst",
+      "name": "Аналитик проектов"
+    },
+    {
+      "id": "korolev-k5",
+      "name": "Королев ИИ К5 31b"
+    },
+    {
+      "id": "korolev-k5-reasoning",
+      "name": "korolev-k5-reasoning"
+    },
+    {
+      "id": "korolev-k5-think",
+      "name": "Королев ИИ К5 284b"
+    }
+  ],
+  "model_note": "Названия и ID воспроизведены из списка сервиса. 31b/284b — части отображаемых имён, а не независимо проверенное число параметров. Базовые веса, архитектура, checkpoint и режимы рассуждений не установлены.",
+  "generation_api": {
+    "status": "web_frontend_verified",
+    "base_url": "https://assistant.korolev-ai.bmstu.ru",
+    "request_path": "/api/chat/completions",
+    "provider": "korolev_web",
+    "authentication": "Штатный университетский SSO; сессия только в памяти, не API-ключ",
+    "public_api_contract_verified": false,
+    "openai_compatible": null,
+    "public_api_key_feature_enabled": true,
+    "source_url": "https://assistant.korolev-ai.bmstu.ru/api/config",
+    "api_key_created": false,
+    "supported_parameters": {
+      "stream": false,
+      "params.temperature_sent": 0.0,
+      "server_effective_temperature": null,
+      "features.web_search": false,
+      "features.image_generation": false,
+      "features.code_interpreter": false,
+      "chat_id": "local"
+    },
+    "context_window_tokens": null,
+    "limits": {
+      "declared_context_tokens": 131072,
+      "declared_max_output_tokens": 8000,
+      "source": "Авторизованный каталог моделей; поля context_length/max_output_tokens/top_provider",
+      "independently_verified": false,
+      "rate_limits": null
+    },
+    "rub_per_1m_in": null,
+    "rub_per_1m_out": null,
+    "note": "Реальный smoke через подтверждённый frontend-протокол успешен: ответ 4, usage 4087/2. Публичный API-контракт и тариф не установлены; скрытый контекст backend возможен. Сессионный доступ не является API-ключом."
+  },
+  "experiment": {
+    "status": "complete",
+    "generation_requests": 681,
+    "included_in_metrics": true,
+    "included_in_historical_metrics": false,
+    "resume_not_before_utc": null,
+    "pause_reason": null,
+    "model_key": "korolev-k5",
+    "log": "logs/korolev_calls.jsonl",
+    "manifest": "results/korolev/run_manifest.json",
+    "comparisons": "results/korolev/comparison.json",
+    "note": "Состояние реального дополнительного прогона. Полнота и оставшиеся ручные проверки отражены в отдельной сводке; исторические результаты четырёх моделей не перезаписаны.",
+    "comparison_status": "pending_human_or_execution",
+    "review_method": "one_human_reviewer_sheet_r1",
+    "human_reviewed": true,
+    "review_sheet": "grading/korolev/sheet_r1.csv",
+    "successful_evaluation_requests": 679,
+    "failed_evaluation_attempts": 1
+  },
+  "research_report": "reports/Королёв ИИ для ЛР3.md",
+  "technical_notes": "research_notes/Королёв ИИ для ЛР3/api.md"
+}

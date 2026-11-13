@@ -1,0 +1,11 @@
+model_key,type,n_answers,n_both_reviewed,mean_score_0_2
+gigachat-2-max,B,8,8,1.75
+gigachat-2-max,C,6,6,0.9166666666666666
+yandexgpt-pro-5.1,B,8,8,1.75
+yandexgpt-pro-5.1,C,6,6,1.0
+deepseek-v4-pro,B,8,8,1.75
+deepseek-v4-pro,C,6,6,1.5
+qwen3-8b,B,8,8,1.125
+qwen3-8b,C,6,6,1.0
+korolev-k5,B,8,0,
+korolev-k5,C,6,0,

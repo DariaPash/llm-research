@@ -1,0 +1,12 @@
+model,shots,train_set,resample_id,eval_set,n_train,n_train_failures,n_eval,n_eval_failures,f1_failure,balanced_accuracy,accuracy,precision_failure,recall_failure,tp,fp,fn,tn,seed,test_mode,n_resamples,f1_failure_sd,balanced_accuracy_sd,accuracy_sd,source,lang,n_answered,coverage,n_cannot_determine,n_refused_or_unparsed,n_tech_error,complete
+Dummy(most_frequent),5.0,fixed,,test,5.0,2.0,200,40,0.0,0.5,0.8,0.0,0.0,0.0,0.0,40.0,160.0,42.0,enriched,,,,,classical,,200,1.0,0,0,0,True
+Dummy(most_frequent),20.0,fixed,,test,20.0,5.0,200,40,0.0,0.5,0.8,0.0,0.0,0.0,0.0,40.0,160.0,42.0,enriched,,,,,classical,,200,1.0,0,0,0,True
+GaussianNB,5.0,fixed,,test,5.0,2.0,200,40,0.280374,0.525,0.615,0.223881,0.375,15.0,52.0,25.0,108.0,42.0,enriched,,,,,classical,,200,1.0,0,0,0,True
+GaussianNB,20.0,fixed,,test,20.0,5.0,200,40,0.406015,0.63125,0.605,0.290323,0.675,27.0,66.0,13.0,94.0,42.0,enriched,,,,,classical,,200,1.0,0,0,0,True
+LogisticRegression,5.0,fixed,,test,5.0,2.0,200,40,0.280702,0.571875,0.795,0.470588,0.2,8.0,9.0,32.0,151.0,42.0,enriched,,,,,classical,,200,1.0,0,0,0,True
+LogisticRegression,20.0,fixed,,test,20.0,5.0,200,40,0.192308,0.540625,0.79,0.416667,0.125,5.0,7.0,35.0,153.0,42.0,enriched,,,,,classical,,200,1.0,0,0,0,True
+GaussianNB,5.0,resample,,test,,,200,40,0.2069749,0.5389062499999999,0.7190000000000001,0.2937961,0.23875000000000002,,,,,,,20.0,0.19292438377984156,0.09133104615505241,0.1259135041459644,classical,,200,1.0,0,0,0,True
+GaussianNB,20.0,resample,,test,,,200,40,0.4884884499999999,0.6799999999999999,0.7002500000000002,0.44979500000000006,0.64625,,,,,,,20.0,0.11305268113139719,0.08536757789268216,0.16786174605750318,classical,,200,1.0,0,0,0,True
+LogisticRegression,5.0,resample,,test,,,200,40,0.44776475,0.6649999999999999,0.7355,0.43168439999999997,0.5475000000000001,,,,,,,20.0,0.14267661238172036,0.08830457161676881,0.10564214669294984,classical,,200,1.0,0,0,0,True
+LogisticRegression,20.0,resample,,test,,,200,40,0.473773,0.6670312500000001,0.834,0.66385755,0.38875000000000004,,,,,,,20.0,0.16769300378150293,0.09134230078572,0.053301525602734365,classical,,200,1.0,0,0,0,True
+constant(нет отказа),,none,,full,0.0,0.0,10000,339,0.0,0.5,0.9661,0.0,0.0,0.0,0.0,339.0,9661.0,42.0,enriched,,,,,classical,,10000,1.0,0,0,0,True

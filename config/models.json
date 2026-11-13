@@ -106,6 +106,20 @@
       "note": "DeepSeek-V4.1-Flash: дешевле, младше. Альтернатива для роли big."
     },
     {
+      "key": "korolev-k5",
+      "role": "ru3",
+      "provider": "korolev_web",
+      "model": "korolev-k5",
+      "base_url": "https://assistant.korolev-ai.bmstu.ru",
+      "api_key_env": null,
+      "min_temperature": 0.0,
+      "timeout_s": 300,
+      "max_workers": 1,
+      "params": {},
+      "enabled": true,
+      "note": "Frontend-протокол /api/chat/completions через штатный SSO; НЕ публичный OpenAI API. KOROLEV_LOGIN/PASSWORD только в runtime. max_workers=1, временный чат без инструментов. Реальный smoke 2026-11-13: ответ 4, HTTP 200, usage 4087/2; возможен скрытый контекст backend, temperature/max_tokens отправляются в params. Отображаемое имя: Королев ИИ К5 31b."
+    },
+    {
       "key": "qwen3-8b",
       "role": "local",
       "provider": "ollama",

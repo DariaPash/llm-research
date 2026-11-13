@@ -1,0 +1,6 @@
+model_key,n,latency_s_n_known,latency_s_mean,tokens_in_n_known,tokens_in_mean,tokens_in_full_n_known,tokens_in_full_mean,tokens_out_n_known,tokens_out_mean,cost_rub_total,rub_per_correct,cost_status
+gigachat-2-max,16,16,8.5135,16,150.3125,16,266.25,16,508.5625,6.8523,0.45681999999999995,known
+yandexgpt-pro-5.1,16,16,2.774875,16,235.625,16,235.625,16,394.4375,8.0648,0.5376533333333333,known
+deepseek-v4-pro,16,16,9.467125,16,296.0,16,296.0,16,433.0,2.8601368288,0.1787585518,known
+qwen3-8b,16,16,4.83075,16,352.0,16,352.0,16,589.6875,0.0,0.0,known
+korolev-k5,16,16,9.396437500000001,16,4251.5,16,4251.5,16,675.8125,,,unknown

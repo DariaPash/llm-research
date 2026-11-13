@@ -1,0 +1,15 @@
+model_key,n_pairs,acc_a,acc_a_ci_low,acc_a_ci_high,acc_b,acc_b_ci_low,acc_b_ci_high,diff_a_minus_b,diff_ci_low,diff_ci_high,only_a_correct,only_b_correct,mcnemar_p,type,pool,n_models,group
+gigachat-2-max,8,0.875,0.625,1.0,0.875,0.625,1.0,0.0,0.0,0.0,0,0,1.0,A,available_models,1,
+yandexgpt-pro-5.1,8,0.875,0.625,1.0,0.875,0.625,1.0,0.0,-0.375,0.25,1,1,1.0,A,available_models,1,
+qwen3-8b,8,1.0,1.0,1.0,0.75,0.375,1.0,0.25,0.0,0.625,2,0,0.5,A,available_models,1,
+deepseek-v4-pro,8,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0,0,1.0,A,available_models,1,
+korolev-k5,8,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0,0,1.0,A,available_models,1,
+все,40,0.95,0.85,1.0,0.9,0.8,0.975,0.05,0.0,0.1,3,1,0.625,A,available_models,5,
+,40,0.95,0.85,1.0,0.9,0.8,0.975,0.05,0.0,0.1,3,1,0.625,A,common_all_five,5,все
+gigachat-2-max,8,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0,0,1.0,B,available_models,1,
+yandexgpt-pro-5.1,8,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0,0,1.0,B,available_models,1,
+qwen3-8b,8,0.875,0.625,1.0,0.75,0.375,1.0,0.125,0.0,0.375,1,0,1.0,B,available_models,1,
+deepseek-v4-pro,8,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0,0,1.0,B,available_models,1,
+korolev-k5,8,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0,0,1.0,B,available_models,1,
+все,40,0.975,0.925,1.0,0.95,0.875,1.0,0.025,0.0,0.075,1,0,1.0,B,available_models,5,
+,40,0.975,0.925,1.0,0.95,0.875,1.0,0.025,0.0,0.075,1,0,1.0,B,common_all_five,5,все

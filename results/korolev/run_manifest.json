@@ -1,0 +1,84 @@
+{
+  "created_utc": "2026-11-13T14:05:15+00:00",
+  "status": "complete",
+  "model_key": "korolev-k5",
+  "model_requested": "korolev-k5",
+  "provider": "korolev_web",
+  "base_url": "https://assistant.korolev-ai.bmstu.ru",
+  "params": {},
+  "historical_comparison": true,
+  "note": "Новый реальный прогон после исходного октябрьского эксперимента. Веб-протокол и скрытые инструкции сервиса могут отличаться от plain API.",
+  "log": "logs/korolev_calls.jsonl",
+  "output_dir": "results/korolev",
+  "prompt_version": "v1",
+  "prompt_hash": "d946bcbce2dd",
+  "temperature_requested": 0,
+  "max_tokens": null,
+  "typeE_split_hash": "446cd9631466",
+  "inputs_sha256": {
+    "data/tasks.jsonl": "8bb7f3b4e095191e68bf5e0b8ab12b46e653ca5eba1af598e3ca3bd342ee1b86",
+    "data/ai4i2020.csv": "1d05d66d8c7a5e5210a8917e9278194a79923693dc03e04a14b3bcdd5a55d674",
+    "data/e_split.json": "96d443088e95f5532e342d8a5f3000e6efde25b1078536071c0515ea8fcf3edb",
+    "hypotheses.md": "50085d16a98c99d7f978682e87576456d75c928ad5a864e5938517a3f5f140d9",
+    "config/experiment.json": "ede114dd99c407d899d27cb4a79a8bee765927cd167cea70216adc42045a28a2",
+    "src/prompts.py": "0fedf141cb3dd3d88a301b12caa95133c1e9fd85987ff7168ae6a9e216004950"
+  },
+  "plan": {
+    "main": 38,
+    "cot": 16,
+    "followup_doubt_max": 26,
+    "typeE": 600
+  },
+  "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "httpx": "0.28.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0"
+  },
+  "historical_files_sha256": {
+    "logs/calls.jsonl": "7c8c3a36ad09be23b6248965c9c7586159c6bbf632cc242cab127e750a449d0c",
+    "results/run_manifest.json": "2b6c0d1670a0e82f08592ec4083fa5ec75cdd456d3ef1b1c185526c86e3df000",
+    "results/summary_metrics.json": "8a4dd50cfa7b3b84f0e7f92b7f4c3081b46927aab226e10bc8606d5cfedac17b",
+    "results/main_ru.jsonl": "6d99615907dc3b1d326b170a997f42a8b464b3016e638ce14673ec46ba2b98f0",
+    "results/cot_ru.jsonl": "dc69f514c6c892911f7cc278d8091faebb6313d15f0760d7f5a7ec6051e3b978",
+    "results/followup_doubt_ru.jsonl": "9fbfe0ef3a53bcbc138bd14a55d6f61493f72df55215158bf3f98340425ec17d",
+    "results/typeE_llm.jsonl": "3532508560317463041b5fab0450e0ec6dcf7a8cbc697712791323fe7e4d8c08",
+    "grading/sheet_r1.csv": "f8d6abb25d2d7d6c0a90166569d4bf04fe13041d3f6cc652e310197dd5d131c7",
+    "grading/sheet_r2.csv": "8ad8757f3469e43e7e5888e1a020349f2cb651f8aec5434780fb3ef249bc1696"
+  },
+  "stages": {
+    "main": {
+      "expected": 38,
+      "received": 38,
+      "successful": 38,
+      "status": "complete"
+    },
+    "cot": {
+      "expected": 16,
+      "received": 16,
+      "successful": 16,
+      "status": "complete"
+    },
+    "followup_doubt": {
+      "expected": 25,
+      "received": 25,
+      "successful": 25,
+      "status": "complete"
+    },
+    "typeE": {
+      "expected": 600,
+      "received": 600,
+      "successful": 600,
+      "status": "complete"
+    }
+  },
+  "manual_grading": "B reasoning, C and D checklist await human review",
+  "secrets_stored": false,
+  "last_started_utc": "2026-11-13T22:48:59+00:00",
+  "updated_utc": "2026-11-13T23:23:18+00:00",
+  "resume_not_before_utc": "2026-11-13T19:03:54.636000+00:00"
+}

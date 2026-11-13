@@ -97,6 +97,8 @@ def missing_env(cfg: dict) -> list[str]:
     )
     if cfg.get("api_key_env"):
         needed.append(cfg["api_key_env"])
+    if cfg.get("provider") == "korolev_web":
+        needed.extend(["KOROLEV_LOGIN", "KOROLEV_PASSWORD"])
     return [
         name for name in dict.fromkeys(needed) if not os.getenv(name)
     ]  # без повторов, порядок сохранён
@@ -131,11 +133,14 @@ def _scrub(text: str) -> str:
     for name, value in os.environ.items():
         if (
             value
-            and len(value) >= 8
+            and (len(value) >= 8 or name in ("KOROLEV_LOGIN", "KOROLEV_PASSWORD"))
             and re.search(r"(KEY|CREDENTIALS|TOKEN|SECRET|PASSWORD|LOGIN)$", name)
         ):
             text = text.replace(value, "***")
-    return text
+    # Сессионные секреты веб-провайдера не находятся в env: они живут только в RAM.
+    from .korolev import scrub as scrub_korolev
+
+    return scrub_korolev(text)
 
 
 def make_cache_key(
@@ -549,6 +554,10 @@ def _call_mock(cfg, model_id, messages, temperature, max_tokens, repeat):
 
 
 def _call_provider(provider, cfg, model_id, messages, temperature, max_tokens, repeat):
+    if provider == "korolev_web":
+        from .korolev import call as call_korolev
+
+        return call_korolev(cfg, model_id, messages, temperature, max_tokens, repeat)
     if provider == "openai_compat":
         return _call_openai_compat(
             cfg, model_id, messages, temperature, max_tokens, repeat
@@ -688,6 +697,11 @@ def ask(
             "local_mem_mb": local_mem_mb,
             "local_vram_mb": None,
         }
+        if provider == "korolev_web":
+            record["provider_metadata"] = out.get("provider_metadata")
+            record["raw_generation_response"] = out.get("raw_generation_response")
+            if exc is not None and getattr(exc, "retry_after_s", None) is not None:
+                record["retry_after_s"] = exc.retry_after_s
         if provider == "ollama":
             record["ollama_base_url"] = cfg[
                 "base_url"
